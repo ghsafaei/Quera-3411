@@ -1,4 +1,4 @@
-Program my_3
+Program my_3facto
  implicit none
   integer n,factn,i,mf
    print*, 'please enter n'
