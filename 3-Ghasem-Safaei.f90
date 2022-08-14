@@ -1,11 +1,11 @@
 Program my_3
  implicit none
   integer n,factn,i,mf
-  print*, 'please enter n'
+   print*, 'please enter n'
   read(*,*)n
- call  factoriel(n,factn)
- call  modfac(factn,mf)
-	print*,'n!=', factn
+  call  factoriel(n,factn)
+  call  modfac(factn,mf)
+   print*,'n!=', factn
  End program
 !***********************************************
  SUBROUTINE factoriel(n,factn)
@@ -29,7 +29,7 @@ END
 	   ELSE IF (  mod(factn,10) .eq. 0) THEN
     	  j=1
 		  mf=factn/(10**j)
-		  do while (mod(mf,10) .eq. 0)       
+	  do while (mod(mf,10) .eq. 0)       
             mf=factn/(10**j) 
             j = j + 1
           end do  
